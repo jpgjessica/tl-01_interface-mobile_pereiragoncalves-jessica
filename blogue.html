@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./assets/css/components/_accueil.css" />
+  <link rel="stylesheet" href="./assets/css/components/_banners.css" />
+  <link rel="stylesheet" href="./assets/css/components/_blogue.css" />
+  <link rel="stylesheet" href="./assets/css/components/_buttons.css" />
+  <link rel="stylesheet" href="./assets/css/components/_dialogue.css" />
+  <link rel="stylesheet" href="./assets/css/components/_footer.css" />
+  <link rel="stylesheet" href="./assets/css/components/_header.css" />
+  <link rel="stylesheet" href="./assets/css/styles.css" /> 
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="icon" type="image/x-icon" href="./assets/img/favicon.png">
+  <title>OKA | Tout pour tout petit</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div class="annouce">
+      <p class="annouce-phrase">
+        Livraison gratuite sur commandes de 75$ et plus*
+      </p>
+    </div>
+    <div class="header-base">
+      <button class="material-symbols-outlined menu-visible burguer--icon">menu</button>
+      <a href="./index.html"><img class="img_header" src="./assets/img/oka.png" alt="Logo OKA design" /></a>
+      <nav class="desktop-menu">
+        <ul class="menu">
+          <li class="menu--item">
+            <a href="">À propos</a>
+          </li>
+          <li class="menu--item">
+            <a href="">Produits</a>
+          </li>
+          <li class="menu--item">
+            <a href="">Soldes</a>
+          </li>
+          <li class="menu--item">
+            <a href="./blogue.html">Blogue</a>
+          </li>
+          <li class="menu--item">
+            <a href="">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <div>
+        <button class="material-symbols-outlined">search</button>
+        <button class="material-symbols-outlined">shopping_bag</button>
+      </div>
+    </div>
+    <div class="menu--mobile menu--mobile__hidden">
+      <div class="header--menu header--aside">
+        <img class="img_header" src="./assets/img/oka.png" alt="Logo OKA design" />
+        <button class="material-symbols-outlined btn--close">close</button>
+      </div>
+      <nav>
+        <ul class="menu--mobile_box">
+          <li class="menu--mobile_item menu--mobile_item_border">
+            <a href="">À propos</a>
+          </li>
+          <li class="menu--mobile_item menu--mobile_item_border">
+            <a href="">Produits</a>
+          </li>
+          <li class="menu--mobile_item menu--mobile_item_border">
+            <a href="">Soldes</a>
+          </li>
+          <li class="menu--mobile_item menu--mobile_item_border">
+            <a href="./blogue.html">Blogue</a>
+          </li>
+          <li class="menu--mobile_item">
+            <a href="">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main>
+    <div class="banner">
+      <div class="banner_left">
+        <div class="banner__content">
+          <h2>OkaBlog</h2>
+          <span>Bienvenue dans un monde où chaque détail est pensé pour les plus petits explorateurs en herbe ! Plongez
+            dans l'univers captivant de notre blog, dédié à tout ce qui concerne les tout-petits, du concept Montessori
+            aux astuces de décoration de chambre en passant par des meubles spécialement conçus pour répondre à leurs
+            besoins.</span>
+        </div>
+      </div>
+      <div class="banner_right">
+        <picture>
+          <source media="(min-width: 768px)" srcset="./assets/img/blogue/animaux_large.png">
+          <img src="./assets/img/blogue/heaghog_medium.png" alt="Petit porc-épic avec une loupe">
+        </picture>
+      </div>
+    </div>
+    <div class="bande">
+      <div class="input-container">
+        <label class="label">Filtrer article</label>
+        <input type="text" name="text" class="input--search" placeholder="Rechercher des sujets...">
+        <span class="articleCount"></span>
+      </div>
+      <div>
+        <button class="material-symbols-outlined list">list</button>
+        <button class="material-symbols-outlined grid hidden">grid_view</button>
+      </div>
+    </div>
+    <div class="blog_content grid">
+    </div>
+    <div class="overlay hiddenOverlay">
+      <div class="dialogue_savoirPlus">
+      </div>
+    </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="desktop-footer">
+      <div class="footer_div">
+        <a href="./index.html"><img class="footer_img" src="./assets/img/oka.png" alt="Logo OKA design" /></a>
+        <p>© OKA 2024</p>
+      </div>
+      <div class="footer_div">
+        <nav class="footer_div-menu">
+          <h4>À Propos</h4>
+          <ul class="footer_div-menu-nav">
+            <li><a href="">Mission</a></li>
+            <li><a href="">Entreprise</a></li>
+            <li><a href="">Carrière</a></li>
+          </ul>
+        </nav>
+        <nav class="footer_div-menu">
+          <h4>Commandes</h4>
+          <ul class="footer_div-menu-nav">
+            <li><a href="">Politique de livraison</a></li>
+            <li><a href="">Échanges et retours</a></li>
+            <li><a href="">Politique de remboursement</a></li>
+            <li><a href="">Condition d'utilisation</a></li>
+          </ul>
+        </nav>
+        <nav class="footer_div-menu">
+          <h4>SERVICE À LA CLIENTÈLE</h4>
+          <ul class="footer_div-menu-nav">
+            <li><a href="">FAQ</a></li>
+            <li><a href="">Centre d'aide</a></li>
+            <li><a href="">Contactez-nous</a></li>
+            <li><a href="">Politique de confidentialité</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="mobile-footer">
+      <div class="mobile-footer_div">
+        <a href="./index.html"><img class="mobile-footer_img" src="./assets/img/oka.png" alt="Logo OKA design" /></a>
+        <p>© OKA 2024</p>
+      </div>
+      <div class="mobile-footer_div">
+        <nav class="mobile-footer_div-menu">
+          <div class="mobile-footer_title">
+            <h4>À Propos</h4>
+            <button class="material-symbols-outlined expand_more">expand_more</button>
+            <button class="material-symbols-outlined expand_less hidden">expand_less</button>
+          </div>
+          <ul class="mobile-footer_div-menu-nav mobile-footer_hidden">
+            <li><a href="">Mission</a></li>
+            <li><a href="">Entreprise</a></li>
+            <li><a href="">Carrière</a></li>
+          </ul>
+        </nav>
+        <nav class="mobile-footer_div-menu">
+          <div class="mobile-footer_title">
+            <h4>Commandes</h4>
+            <button class="material-symbols-outlined expand_more">expand_more</button>
+            <button class="material-symbols-outlined expand_less hidden">expand_less</button>
+          </div>
+          <ul class="mobile-footer_div-menu-nav mobile-footer_hidden">
+            <li><a href="">Politique de livraison</a></li>
+            <li><a href="">Échanges et retours</a></li>
+            <li><a href="">Politique de remboursement</a></li>
+            <li><a href="">Condition d'utilisation</a></li>
+          </ul>
+        </nav>
+        <nav class="mobile-footer_div-menu">
+          <div class="mobile-footer_title">
+            <h4>SERVICE À LA CLIENTÈLE</h4>
+            <button class="material-symbols-outlined expand_more">expand_more</button>
+            <button class="material-symbols-outlined expand_less hidden">expand_less</button>
+          </div>
+          <ul class="mobile-footer_div-menu-nav mobile-footer_hidden">
+            <li><a href="">FAQ</a></li>
+            <li><a href="">Centre d'aide</a></li>
+            <li><a href="">Contactez-nous</a></li>
+            <li><a href="">Politique de confidentialité</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="footer_fixe">
+      <p><time datetime="2024-06-14">14 juin 2024</time> | Jessica Pereira Gonçalves | Interface mobile - PMI | Travail
+        présenté à Cedrick Plante </p>
+    </div>
+  </footer>
+</body>
+  <script src="./assets/js/app.js"></script>
+  <script src="./assets/js/blogue.js"></script>  
+  <script src="./assets/js/banners.js"></script>
+  <script src="./assets/js/dialogue.js"></script>  
+</html>

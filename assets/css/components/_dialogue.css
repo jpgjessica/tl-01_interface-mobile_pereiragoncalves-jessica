@@ -1,0 +1,74 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hiddenOverlay {
+    visibility: hidden;
+}
+
+.overlay.active {
+    visibility: visible;
+}
+
+.dialogue {
+    display: grid;
+    justify-content: center;
+    font-family: "Montserrat";
+    font-size: 1.5rem;
+    background-color: var(--color-two);
+    max-width: 40rem;
+    max-height: 60rem;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    padding: 20px;
+    box-shadow: 7px 7px 0px 0px var(--color-five);
+}
+
+.dialogue_content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dialogue_content>.btn--close--dialogue {
+    color: black;
+    float: right;
+    font-size: 4rem;
+}
+
+.dialogue_header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.dialogue_img {
+    width: 100%;
+    max-width: 100% auto;
+    padding: 1rem 0rem;
+}
+
+.dialogue_footer {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+    .dialogue {
+        max-width: 80rem;
+        max-height: 50rem;
+    }
+
+    .dialogue_img {
+        width: 100%;
+        max-width: 100% auto;
+    }
+}
