@@ -2,7 +2,7 @@
  * Représente un produit.
  * @class
  */
-class product {
+class Product {
   /**
    * @constructor
    * @param {string} name - Le nom du produit.
@@ -22,7 +22,7 @@ class product {
    * @returns {HTMLElement} Élément HTML représentant le produit.
    */
 
-  ToHtml() {
+  toHtml() {
     const cardProduct = document.createElement('div');
     const img = document.createElement('img');
     const cardContent = document.createElement("div");
@@ -104,4 +104,4 @@ sectionTitle.textContent = 'Nos produits';
 
 containerProducts.insertBefore(sectionTitle, bestProduct);
 
-products.forEach((product) => bestProduct.appendChild(product.ToHtml()));
+products.forEach((product) => bestProduct.appendChild(product.toHtml()));

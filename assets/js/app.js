@@ -17,45 +17,49 @@ const closeBtn = document.querySelector(".btn--close");
 /**
  * Configure les interactions du menu et du bouton de fermeture du menu mobile.
  */
+/** Indentation */
 function configureHeader() {
   burguerBtn.addEventListener("click", () => {
-  menuMobile.classList.toggle("menu--mobile__hidden");
-});
+    menuMobile.classList.toggle("menu--mobile__hidden");
+  });
 
-closeBtn.addEventListener("click", () => {
-  menuMobile.classList.add("menu--mobile__hidden");
-});
+  closeBtn.addEventListener("click", () => {
+    menuMobile.classList.add("menu--mobile__hidden");
+  });
 }
 
 configureHeader();
+
+/** Puisque les variables expandMoreBtns, expandLessBtns et footerNavs ne changeront jamais, j'aurais prefere que tu utilises const plutot que let */
 
 /** 
  * Boutons pour étendre les sections du pied de page.
  * @type {NodeListOf<HTMLElement>}
  */
-let expandMoreBtns = document.querySelectorAll(".expand_more");
+const expandMoreBtns = document.querySelectorAll(".expand_more");
 /** 
  * Boutons pour réduire les sections du pied de page.
  * @type {NodeListOf<HTMLElement>}
  */
-let expandLessBtns = document.querySelectorAll(".expand_less");
+const expandLessBtns = document.querySelectorAll(".expand_less");
 /** 
  * Sections du menu du pied de page.
  * @type {NodeListOf<HTMLElement>}
  */
-let footerNavs = document.querySelectorAll(".mobile-footer_div-menu-nav");
+const footerNavs = document.querySelectorAll(".mobile-footer_div-menu-nav");
 
 /**
  * Configure les boutons pour étendre et réduire les sections du pied de page.
  */
 function configureFooter() {
   expandMoreBtns.forEach((expandMoreBtn, i) => {
-  expandMoreBtn.addEventListener('click', () => {
-    let footerNav = footerNavs[i];
-    footerNav.classList.remove('mobile-footer_hidden');
-    expandMoreBtn.classList.add('hidden');
-    expandLessBtns[i].classList.remove('hidden');
-  });
+    /** Indentation */
+    expandMoreBtn.addEventListener('click', () => {
+      let footerNav = footerNavs[i];
+      footerNav.classList.remove('mobile-footer_hidden');
+      expandMoreBtn.classList.add('hidden');
+      expandLessBtns[i].classList.remove('hidden');
+    });
 });
 
 expandLessBtns.forEach((expandLessBtn, i) => {
