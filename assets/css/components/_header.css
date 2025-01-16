@@ -1,150 +1,146 @@
 .annouce {
-    background-color: var(--color-one);
-    display: block;
-    text-align: center;
+  background-color: var(--color-one);
+  display: block;
+  text-align: center;
 }
 
 .annouce p {
-    color: var(--color-two);
-    margin: 0;
-    font-family: "Montserrat";
-    font-weight: 600;
-    padding: 1rem;
-    font-size: 1rem;
+  color: var(--color-two);
+  margin: 0;
+  font-family: "Montserrat", serif;
+  font-weight: 600;
+  padding: 1rem;
+  font-size: 1rem;
 }
 
 .img_header {
-    max-width: 200px;
-    cursor: pointer;
+  max-width: 200px;
+  cursor: pointer;
 }
 
 .header-base {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 30px;
-    background-color: var(--color-three);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  background-color: var(--color-three);
 }
 
 .menu {
-    display: flex;
-    flex-direction: row;
-    padding: 0;
-    gap: 3rem;
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  gap: 3rem;
 }
 
 .menu--item,
 .menu--item a {
-    color: var(--color-two);
-    font-family: "Montserrat";
-    font-size: 1.2rem;
-    font-weight: 300;
-    text-transform: uppercase;
-    list-style-type: none;
-    text-decoration: none;
-    margin: 0;
+  color: var(--color-two);
+  font-family: "Montserrat", serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  list-style-type: none;
+  text-decoration: none;
+  margin: 0;
 }
 
 .desktop-menu {
-    display: none;
+  display: none;
 }
 
 .material-symbols-outlined {
-    color: var(--color-two);
-    cursor: pointer;
-    transition: transform .2s;
-    font-variation-settings:
-        'FILL' 0,
-        'wght' 200,
-        'GRAD' 0,
-        'opsz' 24;
+  color: var(--color-two);
+  cursor: pointer;
+  transition: transform 0.2s;
+  font-variation-settings: "FILL" 0, "wght" 200, "GRAD" 0, "opsz" 24;
 }
 
 .material-symbols-outlined:hover {
-    color: var(--color-one);
-    transform: scale(1.2);
+  color: var(--color-one);
+  transform: scale(1.2);
 }
 
 button:nth-child(1) {
-    padding-right: 1rem;
+  padding-right: 1rem;
 }
 
 .menu-visible {
-    display: block;
+  display: block;
 }
 
 .menu--mobile {
-    display: block;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    overflow: hidden;
-    width: 100%;
-    background-color: var(--color-three);
+  display: block;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  overflow: hidden;
+  width: 100%;
+  background-color: var(--color-three);
 }
 
-.menu--mobile>img {
-    margin: 0;
+.menu--mobile > img {
+  margin: 0;
 }
 
 .menu--mobile__hidden {
-    display: none;
+  display: none;
 }
 
 .header--menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header--menu .material-symbols-outlined {
-    padding-right: 20px;
+  padding-right: 20px;
 }
 
 .menu--mobile_box {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .menu--mobile_item,
 .menu--mobile_item a {
-    color: var(--color-two);
-    font-family: "Montserrat";
-    font-size: 1.2rem;
-    font-weight: 300;
-    text-transform: uppercase;
-    list-style-type: none;
-    text-decoration: none;
-    padding: 20px 0px;
+  color: var(--color-two);
+  font-family: "Montserrat", serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  list-style-type: none;
+  text-decoration: none;
+  padding: 20px 0px;
 }
 
 .menu--item:hover,
 .menu--mobile_item a:hover {
-    color: var(--color-one);
-    transform: scale(1.1);
+  color: var(--color-one);
+  transform: scale(1.1);
 }
 
 .menu--mobile_item_border {
-    border-bottom: var(--color-one) solid 1px;
-    transform: scale(1);
+  border-bottom: var(--color-one) solid 1px;
+  transform: scale(1);
 }
 
 .menu--mobile ul {
-    padding: 2rem;
+  padding: 2rem;
 }
 
 @media screen and (min-width: 768px) {
-    .desktop-menu {
-        display: block;
-    }
+  .desktop-menu {
+    display: block;
+  }
 
-    .material-symbols-outlined.menu-visible {
-        display: none;
-    }
+  .material-symbols-outlined.menu-visible {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 1024px) {
-    .img_header {
-        max-width: 120px;
-    }
+  .img_header {
+    max-width: 120px;
+  }
 }

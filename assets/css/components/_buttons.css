@@ -1,4 +1,4 @@
-button{
+button {
   background-color: transparent;
   border: 0;
 }
@@ -17,14 +17,14 @@ button{
   border-radius: 0.2rem;
   box-shadow: 5px 5px var(--color-three-var);
   margin-top: 4rem;
-  font-family: "Montserrat";
+  font-family: "Montserrat", serif;
 }
 
 .banner__content .art--btn {
   margin: 5px 20px;
 }
 
-.btn--close{
+.btn--close {
   color: white;
   font-weight: 800;
   font-size: 1.2rem;
@@ -37,7 +37,7 @@ button{
   transform: scale(1.05);
 }
 
-.banner__content{
+.banner__content {
   margin: 5px 20px;
 }
 
@@ -45,12 +45,8 @@ button{
 .material-symbols-outlined.grid {
   color: var(--color-three);
   cursor: pointer;
-  transition: transform .2s;
-  font-variation-settings:
-    'FILL' 0,
-    'wght' 600,
-    'GRAD' 0,
-    'opsz' 24;
+  transition: transform 0.2s;
+  font-variation-settings: "FILL" 0, "wght" 600, "GRAD" 0, "opsz" 24;
 }
 
 .material-symbols-outlined.list:hover,

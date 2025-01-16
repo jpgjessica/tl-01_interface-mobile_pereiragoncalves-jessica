@@ -1,109 +1,111 @@
 .bande {
-    background-color: var(--color-five-var);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 10rem;
-    padding: 1rem 5rem 1rem 3rem;
+  background-color: var(--color-five-var);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 10rem;
+  padding: 1rem 5rem 1rem 3rem;
 }
 
 .input-container {
-    font-family: "Montserrat";
-    display: flex;
-    flex-direction: column;
-    font-size: 1.5rem;
+  font-family: "Montserrat", serif;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
 }
 
 .input--search {
-    height: 4rem;
-    box-shadow: 7px 7px 0px 0px var(--color-three-var);
-    border: 2px solid var(--color-three);
-    font-size: 1.5rem;
-    outline: none;
-    transition: all 0.5s;
-    min-width: 30rem;
-    padding: 1rem;
+  height: 4rem;
+  box-shadow: 7px 7px 0px 0px var(--color-three-var);
+  border: 2px solid var(--color-three);
+  font-size: 1.5rem;
+  outline: none;
+  transition: all 0.5s;
+  min-width: 30rem;
+  padding: 1rem;
 }
 
 .input--search:focus {
-    box-shadow: none;
-    transition: all 0.5s;
+  box-shadow: none;
+  transition: all 0.5s;
 }
 
-.material-symbols-outlined.list, .material-symbols-outlined.grid {
-    display: none;
+.material-symbols-outlined.list,
+.material-symbols-outlined.grid {
+  display: none;
 }
 
 .blog_content {
-    display: grid;
-    gap: 3rem;
-    padding: 3rem;
+  display: grid;
+  gap: 3rem;
+  padding: 3rem;
 }
 
 .art_card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 200px;
-    box-shadow: 5px 5px var(--color-three-var);
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+  box-shadow: 5px 5px var(--color-three-var);
+  flex-wrap: wrap;
 }
 
 .art--img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 .art_content {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    flex-grow: 1;
-    padding: 1.5rem;
-    padding-right: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-grow: 1;
+  padding: 1.5rem;
+  padding-right: 3rem;
 }
 
 .art--desc {
-    font-family: "Montserrat";
-    font-size: 1.5rem;
+  font-family: "Montserrat", serif;
+  font-size: 1.5rem;
 }
 
 .art_textDescription {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
 }
 
 .art_card.hidden {
-    display: none;
+  display: none;
 }
 
 @media screen and (min-width: 768px) {
-    .blog_content.grid {
-        grid-template-columns: 1fr 1fr;
-    }
+  .blog_content.grid {
+    grid-template-columns: 1fr 1fr;
+  }
 
-    .material-symbols-outlined.grid, .material-symbols-outlined.list {
-        display: block;
-    }
+  .material-symbols-outlined.grid,
+  .material-symbols-outlined.list {
+    display: block;
+  }
 
-    .blog_content.list>.art_card {
-        flex-wrap: nowrap;
-    }
+  .blog_content.list > .art_card {
+    flex-wrap: nowrap;
+  }
 
-    .blog_content.list>.art_card>.art--img {
-        display: block;
-        max-width: 50%;
-        height: auto;
-    }
+  .blog_content.list > .art_card > .art--img {
+    display: block;
+    max-width: 50%;
+    height: auto;
+  }
 }
 
 @media screen and (min-width: 1024px) {
-    .blog_content.grid {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
+  .blog_content.grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 
-    .blog_content.list>.art_card>.art--img {
-        max-width: 30%;
-    }
+  .blog_content.list > .art_card > .art--img {
+    max-width: 30%;
+  }
 }
