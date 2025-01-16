@@ -4,14 +4,29 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.woff2") format("woff2"),
+    url("../fonts/Montserrat-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Bold.woff2") format("woff2"),
+    url("../fonts/Montserrat-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
 :root {
-  --color-one: #DABA18;
+  --color-one: #daba18;
   --color-one-var: #e3d48b;
   --color-two: #ffffff;
   --color-three: #023342;
   --color-three-var: #518494;
   --color-four: #000000;
-  --color-five: #AB5A20;
+  --color-five: #ab5a20;
   --color-five-var: #eaac81;
 }
 
@@ -44,7 +59,7 @@ main {
   width: 100%;
 }
 
-.hidden{
+.hidden {
   display: none;
 }
 
